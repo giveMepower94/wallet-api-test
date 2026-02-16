@@ -17,7 +17,7 @@ RUN pip install --no-cache-dir "poetry==${POETRY_VERSION}"
 # Устанавливаем зависимости
 COPY pyproject.toml poetry.lock /app/
 RUN poetry config virtualenvs.create false \
- && poetry install --no-interaction --no-ansi --only main --no-root
+ && poetry install --no-interaction --no-ansi --no-root
 
 # Копируем код
 COPY . /app

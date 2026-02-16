@@ -12,7 +12,7 @@ DATABASE_URL = os.getenv("DATABASE_URL")
 # Создаем движок
 engine = create_async_engine(
     DATABASE_URL,
-    echo=True
+    echo=False
 )
 
 # Создаем асинхронную локальную сессию
