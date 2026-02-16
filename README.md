@@ -21,8 +21,7 @@
 ## Запуск проекта
 
 ```bash
-docker-compose up -d
-docker-compose exec app alembic upgrade head
+docker-compose up -d --build
 ```
 
 ## Документация API (Swagger)
